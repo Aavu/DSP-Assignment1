@@ -1,6 +1,5 @@
 function [m, mabs, stdev, time] = CompareConv(x, h)
-%CompareConv Summary of this function goes here
-%   Detailed explanation goes here
+%CompareConv Compare the output of the convolution from both myTimeConv() and myFreqConv() with the built-in matlab conv() function
     tic;
     y_time = myTimeConv(x, h);
     time(1) = toc;
